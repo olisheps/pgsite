@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>ProperGander</title>
+
+  <!-- Bootstrap core CSS -->
+  {% load static %}
+  <link href="{% static "vendor/bootstrap/css/bootstrap.min.css" %}" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  {% load static %}
+  <link href="{% static "vendor/fontawesome-free/css/all.min.css" %}" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  {% load static %}
+  <link href="{% static "css/grayscale.min.css" %}" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      {% load static %}
+      <img class="navbar-brand js-scroll-trigger" href="#page-top" class="img-fluid" src="{% static "img/PGLogo.png" %}" width=150 alt="">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#projects">Software</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#signup">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="masthead">
+    <div class="container d-flex h-100 align-items-center">
+      <div class="mx-auto text-center">
+        <h1 class="mx-auto my-0 text">Think Again</h1>
+        <h2 class="text-white-50 mx-auto mt-2 mb-5">Coming soon. We're going to be helping people who read the news to get to the truth of the story
+using AI and Machine Learning.</h2>
+        <a href="#about" class="btn btn-primary js-scroll-trigger">Get Started</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="about-section text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2 class="text-white mb-4">Novel solutions... not a new problem.</h2>
+          {% load static %}
+          <img src="{% static "img/MTwain.jpeg" %}" width=150 class="img-fluid" alt="" %}">
+          </br>
+          </br>
+          <p class="text-white-50"> "Those who don’t read the newspapers are uninformed.</br> Those who read the newpapers are misinformed." </br>  <i>Mark Twain, maybe...</i>.</p>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 mx-auto">
+            <img class="img-fluid mb-3 mb-lg-0" src="{% static "img/centralise.png" %}" width=150 alt="">
+            </br>
+            </br>
+            <h3 class="text-white mb-4">Story Centralisation</h2>
+        </div>
+        <div class="col-lg-3 mx-auto">
+            <img class="img-fluid mb-3 mb-lg-0" src="{% static "img/reputation.png" %}" width=150 alt="">
+          </br>
+          </br>
+          <h3 class="text-white mb-4">Reputation Management</h2>
+        </div>
+        <div class="col-lg-3 mx-auto">
+            <img class="img-fluid mb-3 mb-lg-0" src="{% static "img/verify.png" %}" width=150 alt="">
+            </br>
+            </br>
+            <h3 class="text-white mb-4">Article Verification</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section bg-light">
+    <div class="container">
+
+      <!-- Featured Project Row -->
+      <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+        <div class="col-xl-8 col-lg-7">
+          {% load static %}
+          <img class="img-fluid mb-3 mb-lg-0" src="{% static "img/M212.png" %}" width=350 alt="">
+        </div>
+        <div class="col-xl-4 col-lg-5">
+          <div class="featured-text text-center text-lg-left">
+            <h4>Curate and clarity</h4>
+            <p class="text-black-50 mb-0">We'll bring all of your favourite publishers in to one place. Then we'll remove the noise in the story so that you can get to the heart of what is going on in the news.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Thomas Jefferson Quote Section -->
+      <section id="about" class="about-section text-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h2 class="text-white mb-4">Imagine being able to believe your eyes</h2>
+              {% load static %}
+              <img src="{% static "img/tjefferson.jpeg" %}" width=150 class="img-fluid" alt="" %}">
+              </br>
+              </br>
+              <p class="text-white-50"> "Nothing can now be believed which is seen in a newspaper...the man who never looks into a newspaper is better informed than he who reads them; inasmuch as he who knows nothing is nearer to truth than he whose mind is filled with falsehoods & errors.."</br> <i>Thomas Jefferson, definitely</i>.</p>
+
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Project One Row -->
+      <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+        <div class="col-lg-6">
+          {% load static %}
+          <img class="img-fluid" src="{% static "img/claims.png" %}" alt="">
+        </div>
+        <div class="col-lg-6">
+          <div class="bg-black text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-left">
+                <h4 class="text-white">Claims</h4>
+                <p class="mb-0 text-white-50">Are the reporter's claims supported by the facts in evidence? We'll see if the claims are backed up.</p>
+                <hr class="d-none d-lg-block mb-0 ml-0">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Two Row -->
+      <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+        <div class="col-lg-6">
+          {% load static %}
+          <img class="img-fluid" src="{% static "img/sources.png" %}" alt="">
+        </div>
+        <div class="col-lg-6 order-lg-first">
+          <div class="bg-black text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-right">
+                <h4 class="text-white">Sourcing</h4>
+                <p class="mb-0 text-white-50">Did they say that? Is that what they meant? Do we even know who said it? Let's check out who's saying what to whom.</p>
+                <hr class="d-none d-lg-block mb-0 mr-0">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Project Three Row -->
+      <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+        <div class="col-lg-6">
+          {% load static %}
+          <img class="img-fluid" src="{% static "img/numbers.png" %}" alt="">
+        </div>
+        <div class="col-lg-6">
+          <div class="bg-black text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-left">
+                <h4 class="text-white">Numbers</h4>
+                <p class="mb-0 text-white-50">Can we make sense of the numbers as they are presented? Are they in context? Let's look at how the numbers are being used to make the story.</p>
+                <hr class="d-none d-lg-block mb-0 ml-0">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Four Row -->
+      <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+        <div class="col-lg-6">
+          {% load static %}
+          <img class="img-fluid" src="{% static "img/opinion.png" %}" alt="">
+        </div>
+        <div class="col-lg-6 order-lg-first">
+          <div class="bg-black text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-right">
+                <h4 class="text-white">Editorialising</h4>
+                <p class="mb-0 text-white-50">We'll look at the language and tone of the piece to see if it's journalism or should be moved to the Opinions sections</p>
+                <hr class="d-none d-lg-block mb-0 mr-0">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Project Five Row -->
+      <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+        <div class="col-lg-6">
+          {% load static %}
+          <img class="img-fluid" src="{% static "img/credibility.png" %}" alt="">
+        </div>
+        <div class="col-lg-6">
+          <div class="bg-black text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-left">
+                <h4 class="text-white">Credibility</h4>
+                <p class="mb-0 text-white-50">After a while, we'll be able to assess the credibility of the publication and the journalist so that you know how sceptical you need to be from the start.</p>
+                <hr class="d-none d-lg-block mb-0 ml-0">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  <!-- Signup Section -->
+  <section id="signup" class="signup-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-lg-8 mx-auto text-center">
+
+          <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+          <h2 class="text-white mb-5">Join our growing community to keep up to date!</h2>
+
+          <form class="form-inline d-flex">
+            <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address...">
+            <button type="submit" class="btn btn-primary mx-auto">Join now</button>
+          </form>
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- Contact Section -->
+  <section class="contact-section bg-black">
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+              <h4 class="text-uppercase m-0">Address</h4>
+              <hr class="my-4">
+              <div class="small text-black-50">The Courtyard, The Green, Chiddingfold, Surrey GU8 4TU</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-envelope text-primary mb-2"></i>
+              <h4 class="text-uppercase m-0">Email</h4>
+              <hr class="my-4">
+              <div class="small text-black-50">
+                <a href="#">hello@propergander.app</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-mobile-alt text-primary mb-2"></i>
+              <h4 class="text-uppercase m-0">Phone</h4>
+              <hr class="my-4">
+              <div class="small text-black-50">+44 7498 581 894</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="social d-flex justify-content-center">
+        <a href="#" class="mx-2">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" class="mx-2">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black small text-center text-white-50">
+    <div class="container">
+      Copyright &copy; Sociis Consulting Ltd t/a ProperGander 2020
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="{% static "vendor/jquery/jquery.min.js" %}"></script>
+  <script src="{% static "vendor/bootstrap/js/bootstrap.bundle.min.js" %}"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="{% static "vendor/jquery-easing/jquery.easing.min.js" %}"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="{% static "js/grayscale.min.js" %}"></script>
+
+</body>
+
+</html>
