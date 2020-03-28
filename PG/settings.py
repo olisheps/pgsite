@@ -25,7 +25,7 @@ SECRET_KEY = '@su8kxsmipfeoy3c)m7z0we4&yjs+v4gmkl6m&a$hpklk9!x@p'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['PGapp-test.eu-west-2.elasticbeanstalk.com']
 
 
 # Application definition
@@ -75,12 +75,13 @@ WSGI_APPLICATION = 'PG.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
     }
-}
 
 
 # Password validation
