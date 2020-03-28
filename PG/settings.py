@@ -25,7 +25,9 @@ SECRET_KEY = '@su8kxsmipfeoy3c)m7z0we4&yjs+v4gmkl6m&a$hpklk9!x@p'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['PGapp-test.eu-west-2.elasticbeanstalk.com']
+ALLOWED_HOSTS = ['pgapp-site.eba-vvpcakps.eu-west-2.elasticbeanstalk.com',
+                'localhost']
+
 
 
 # Application definition
@@ -75,14 +77,28 @@ WSGI_APPLICATION = 'PG.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-
-DATABASES = {
+if 'RDS_DB_NAME' in os.environ:
+    DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-        }
+    'ENGINE': 'django.db.backends.postgresql_psycopg2',
+    'NAME': os.environ['postgres'],
+    'USER': os.environ['Administrator'],
+    'PASSWORD': os.environ['pgsite123!'],
+    'HOST': os.environ['aassvlceeo0o6n.cjekqb1nnicx.eu-west-2.rds.amazonaws.com'],
+    'PORT': os.environ['5432'],
     }
-
+    }
+else:
+    DATABASES = {
+    'default': {
+    'ENGINE': 'django.db.backends.postgresql',
+    'NAME': 'pgsitedb',
+    'USER': '',
+    'PASSWORD':'',
+    'HOST':'localhost',
+    'PORT':'5432'
+    }
+    }
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
@@ -120,7 +136,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'website/static/website/')
+    os.path.join(BASE_DIR, 'website/static/website/', "www", "static")
 ]
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
