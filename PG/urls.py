@@ -20,4 +20,6 @@ from website import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name='home'),
+    path('privacy-policy', views.privacy, name='privacy'),
+
 ]

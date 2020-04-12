@@ -1,0 +1,38 @@
+<IfModule mod_expires.c>
+  ExpiresActive On
+  #png, jpg
+  ExpiresByType img/M212.png "access plus 1 year"
+  ExpiresByType img/MTwain.jpeg "access plus 1 year"
+  ExpiresByType img/PGFavicon.png "access plus 1 year"
+  ExpiresByType img/PGLogo.png "access plus 1 year"
+  ExpiresByType img/bg-signup.jpg "access plus 1 year"
+  ExpiresByType img/centralise.png "access plus 1 year"
+  ExpiresByType img/claims.png "access plus 1 year"
+  ExpiresByType img/credibility.png "access plus 1 year"
+  ExpiresByType img/jigsaw2.jpeg "access plus 1 year"
+  ExpiresByType img/numbers.png "access plus 1 year"
+  ExpiresByType img/opinion.png "access plus 1 year"
+  ExpiresByType img/reputation.png "access plus 1 year"
+  ExpiresByType img/sources.png "access plus 1 year"
+  ExpiresByType img/tjefferson.jpeg "access plus 1 year"
+  ExpiresByType img/verify.png "access plus 1 year"
+  ExpiresByType js/grayscale.min.js "access plus 1 year"
+  #css, javascript
+  ExpiresByType css/grayscale.min.css "access plus 1 month"
+  ExpiresByType vendor/bootstrap/css/bootstrap.min.css "access plus 1 month"
+  ExpiresByType vendor/bootstrap/js/bootstrap.bundle.min.js "access plus 1 month"
+  ExpiresByType vendor/fontawesome-free/css/all.min.css "access plus 1 month"
+  ExpiresByType vendor/jquery-easing/jquery.easing.min.js "access plus 1 month"
+  ExpiresByType vendor/jquery/jquery.min.js "access plus 1 month"
+</IfModule>
+
+<IfModule mod_deflate.c>
+  # Compress HTML, CSS, JavaScript, Text, XML and fonts
+  AddOutputFilterByType DEFLATE vendor/bootstrap/css/bootstrap.min.css
+  AddOutputFilterByType DEFLATE vendor/jquery/jquery.min.js
+  AddOutputFilterByType DEFLATE vendor/bootstrap/js/bootstrap.bundle.min.js
+  AddOutputFilterByType DEFLATE vendor/fontawesome-free/css/all.min.css
+  AddOutputFilterByType DEFLATE css/grayscale.min.css
+  AddOutputFilterByType DEFLATE vendor/jquery-easing/jquery.easing.min.js
+  AddOutputFilterByType DEFLATE js/grayscale.min.js
+</IfModule>

@@ -29,6 +29,26 @@
     /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
        We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
   </style>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-63741859-5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-63741859-5');
+</script>
+<!-- Hotjar Tracking Code for https://www.propergander.app -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:1748322,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
 </head>
 
 <body id="page-top">
@@ -62,9 +82,10 @@
   <header class="masthead">
     <div class="container d-flex h-100 align-items-center">
       <div class="mx-auto text-center">
+        <img src="{% static "img/PGFavicon.png" %}" width=100 class="img-fluid" alt="" %}">
+        </br>
         <h1 class="mx-auto my-0 text">Think Again</h1>
-        <h2 class="text-white-50 mx-auto mt-2 mb-5">Coming soon. We're going to be helping people who read the news to get to the truth of the story
-using AI and Machine Learning.</h2>
+        <h2 class="text-white-50 mx-auto mt-4 mb-5">We help people who read the news to get to the truth of the story by analysing media narratives.</h2>
         <a href="#about" class="btn btn-primary js-scroll-trigger">Get Started</a>
       </div>
     </div>
@@ -81,7 +102,7 @@ using AI and Machine Learning.</h2>
           </br>
           </br>
           <p class="text-white-50"> "Those who don’t read the newspapers are uninformed.</br> Those who read the newpapers are misinformed." </br>  <i>Mark Twain, maybe...</i>.</p>
-
+          <h2 class="text-white-50 mx-auto mt-4 mb-5">We provide news analysis and we're building an app to make use of AI and Machine Learning.</h2>
         </div>
       </div>
       <div class="row">
@@ -90,19 +111,22 @@ using AI and Machine Learning.</h2>
             </br>
             </br>
             <h3 class="text-white mb-4">Story Centralisation</h2>
+            <p class="text-white">We look at what are other publications saying about this story.</p>
         </div>
         <div class="col-lg-3 mx-auto">
             <img class="img-fluid mb-3 mb-lg-0" src="{% static "img/reputation.png" %}" width=150 alt="">
           </br>
           </br>
           <h3 class="text-white mb-4">Reputation Management</h2>
+          <p class="text-white">We'll help people who feature in the news to get their side across.</p>
         </div>
         <div class="col-lg-3 mx-auto">
             <img class="img-fluid mb-3 mb-lg-0" src="{% static "img/verify.png" %}" width=150 alt="">
             </br>
             </br>
             <h3 class="text-white mb-4">Article </br> Verification</h2>
-        </div>
+          <p class="text-white">We take apart the press' tools and tricks to get to the truth.</p>
+          </div>
       </div>
     </div>
   </section>
@@ -120,7 +144,7 @@ using AI and Machine Learning.</h2>
         <div class="col-xl-4 col-lg-5">
           <div class="featured-text text-center text-lg-left">
             <h4>Curate and clarity</h4>
-            <p class="text-black-50 mb-0">We'll bring all of your favourite publishers in to one place. Then we'll remove the noise in the story so that you can get to the heart of what is going on in the news.</p>
+            <p class="text-black-50 mb-0">As we develop the app, we'll bring all of your favourite publishers in to one place. Then we'll remove the noise in the story so that you can get to the heart of what is going on in the news.</p>
           </div>
         </div>
       </div>
@@ -279,7 +303,7 @@ using AI and Machine Learning.</h2>
               <i class="fas fa-map-marked-alt text-primary mb-2"></i>
               <h4 class="text-uppercase m-0">Address</h4>
               <hr class="my-4">
-              <div class="small text-black-50">The Courtyard, The Green, Chiddingfold, Surrey GU8 4TU</div>
+              <div class="small text-black-50">Surrey, UK GU8 4TU</div>
             </div>
           </div>
         </div>
@@ -310,10 +334,13 @@ using AI and Machine Learning.</h2>
       </div>
 
       <div class="social d-flex justify-content-center">
-        <a href="#" class="mx-2">
+        <a href="https://www.youtube.com/channel/UC1C-3MOpMxRbyPgfkfmjqPA" class="mx-2">
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a href="https://twitter.com/properganderapp" class="mx-2">
           <i class="fab fa-twitter"></i>
         </a>
-        <a href="#" class="mx-2">
+        <a href="https://www.facebook.com/ProperGanderapp" class="mx-2">
           <i class="fab fa-facebook-f"></i>
         </a>
       </div>
@@ -324,8 +351,12 @@ using AI and Machine Learning.</h2>
   <!-- Footer -->
   <footer class="bg-black small text-center text-white-50">
     <div class="container">
-      Copyright &copy; Sociis Consulting Ltd t/a ProperGander 2020
+      Copyright &copy; Sociis Consulting Ltd Reg No. 09505796 t/a ProperGander 2020
+      <a href="https://propergander.app/privacy-policy" target="_blank">    Privacy Policy</a>
     </div>
+    <!--Start Cookie Script-->
+      <script type="text/javascript" charset="UTF-8" src="http://chs03.cookie-script.com/s/3240af7bfa4038cebe1d91741a8392f2.js"></script>
+    <!--End Cookie Script-->
   </footer>
 
   <!-- Bootstrap core JavaScript -->
@@ -337,7 +368,9 @@ using AI and Machine Learning.</h2>
 
   <!-- Custom scripts for this template -->
   <script src="{% static "js/grayscale.min.js" %}"></script>
-
+  <!-- Start of HubSpot Embed Code -->
+  <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/7402013.js"></script>
+  <!-- End of HubSpot Embed Code -->
 </body>
 
 </html>
