@@ -77,19 +77,7 @@ WSGI_APPLICATION = 'PG.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-if 'RDS_DB_NAME' in os.environ:
-    DATABASES = {
-    'default': {
-    'ENGINE': 'django.db.backends.postgresql_psycopg2',
-    'NAME': os.environ['postgres'],
-    'USER': os.environ['Administrator'],
-    'PASSWORD': os.environ['pgsite123!'],
-    'HOST': os.environ['aassvlceeo0o6n.cjekqb1nnicx.eu-west-2.rds.amazonaws.com'],
-    'PORT': os.environ['5432'],
-    }
-    }
-else:
-    DATABASES = {
+DATABASES = {
     'default': {
     'ENGINE': 'django.db.backends.postgresql',
     'NAME': 'pgsitedb',
