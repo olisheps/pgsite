@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '@su8kxsmipfeoy3c)m7z0we4&yjs+v4gmkl6m&a$hpklk9!x@p'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['pgapp-site.eba-vvpcakps.eu-west-2.elasticbeanstalk.com',
                 'localhost']
